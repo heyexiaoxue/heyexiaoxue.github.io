@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/04/17/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>Manual</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown入门参考</title>
     <url>/2020/04/17/fist-post/</url>
     <content><![CDATA[<p>mathjax测试：</p>
@@ -61,12 +43,55 @@ p_{i} = \mathbb{E}_{s,a\sim\pi}[\sum_{t=0}^{\infty}\nabla_{\theta}\log\pi(a_{i}|
 <td style="text-align:center">小明</td>
 </tr>
 <tr>
-<td style="text-align:left">1</td>
-<td style="text-align:center">小明</td>
+<td style="text-align:left">2</td>
+<td style="text-align:center">小红</td>
 </tr>
 </tbody>
 </table>
 </div>
+]]></content>
+      <tags>
+        <tag>Manual</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pyecharts学习笔记</title>
+    <url>/2020/04/18/pyecharts-learning/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>pyecahrts是用来生成eCharts图表的库，是百度开源的JS库</p>
+<p>pyecharts 可以独立的html网页，也可以配置Flask、Djangle集成使用</p>
+<a id="more"></a>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install pyecharts</span><br></pre></td></tr></table></figure>
+<p>安装特别便捷，用<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip show pyecharts</span><br></pre></td></tr></table></figure><br>可以很方便查看pyecharts的安装情况,这个信息后面在部署发布的时候很有用，所以先放在这<br><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">Name: pyecharts</span><br><span class="line">Version: <span class="number">1.7</span><span class="number">.1</span></span><br><span class="line">Summary: Python options, make charting easier</span><br><span class="line">Home-page: https:<span class="comment">//github.com/pyecharts/pyecharts</span></span><br><span class="line">Author: chenjiandongx</span><br><span class="line">Author-email: chenjiandongx@qq.com</span><br><span class="line">License: MIT</span><br><span class="line">Location: /<span class="built_in">home</span>/yuki/anaconda3/lib/python3<span class="number">.7</span>/site-packages</span><br><span class="line">Requires: prettytable, jinja2, simplejson</span><br><span class="line">Required-by:</span><br></pre></td></tr></table></figure><br>我们安装的版本是1.7.1</p>
+<blockquote>
+<p>工欲善其事，必先利其器</p>
+</blockquote>
+<p>pyecharts的技术文档是必不可少的，链接如下</p>
+<p><a href="http://pyecharts.org/#/zh-cn/quickstart" target="_blank" rel="noopener">pyecarts快速上手</a></p>
+<h2 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h2><p>举一个小栗子<br><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Bar</span><br><span class="line"></span><br><span class="line">bar = Bar()</span><br><span class="line">bar.add_xaxis([<span class="string">"衬衫"</span>, <span class="string">"羊毛衫"</span>, <span class="string">"雪纺衫"</span>, <span class="string">"裤子"</span>, <span class="string">"高跟鞋"</span>, <span class="string">"袜子"</span>])</span><br><span class="line">bar.add_yaxis(<span class="string">"商家A"</span>, [<span class="number">5</span>, <span class="number">20</span>, <span class="number">36</span>, <span class="number">10</span>, <span class="number">75</span>, <span class="number">90</span>])</span><br><span class="line"><span class="comment"># render 会生成本地 HTML 文件，默认会在当前目录生成 render.html 文件</span></span><br><span class="line"><span class="comment"># 也可以传入路径参数，如 bar.render("mycharts.html")</span></span><br><span class="line">bar.render()</span><br></pre></td></tr></table></figure><br>但我常用的是pyecharts的链式调用格式</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Bar</span><br><span class="line"></span><br><span class="line">bar = (</span><br><span class="line">    Bar()</span><br><span class="line">    .add_xaxis([<span class="string">"衬衫"</span>, <span class="string">"羊毛衫"</span>, <span class="string">"雪纺衫"</span>, <span class="string">"裤子"</span>, <span class="string">"高跟鞋"</span>, <span class="string">"袜子"</span>])</span><br><span class="line">    .add_yaxis(<span class="string">"商家A"</span>, [<span class="number">5</span>, <span class="number">20</span>, <span class="number">36</span>, <span class="number">10</span>, <span class="number">75</span>, <span class="number">90</span>])</span><br><span class="line">)</span><br><span class="line">bar.render()</span><br></pre></td></tr></table></figure>
+<p>如果你用的时notebook来显示图片，最后一行<code>bar.render()</code>换成<code>bar.render_notebook()</code></p>
+<p>notebook显示有几个坑，google都能查到解决方法</p>
+<p>显示的图表如下:<br><img src="https://user-images.githubusercontent.com/19553554/55601215-656d1480-5792-11e9-87ac-19b912619d7f.png" alt=""></p>
+<h2 id="搭建自己的echarts图表（pandas）"><a href="#搭建自己的echarts图表（pandas）" class="headerlink" title="搭建自己的echarts图表（pandas）"></a>搭建自己的echarts图表（pandas）</h2><p>pandas这里用来处理数据</p>
+<h3 id="生成假数据"><a href="#生成假数据" class="headerlink" title="生成假数据"></a>生成假数据</h3><p>未完待续。。。</p>
+]]></content>
+      <tags>
+        <tag>Manual</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/04/17/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
       <tags>
         <tag>Manual</tag>
