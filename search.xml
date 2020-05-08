@@ -98,6 +98,28 @@ p_{i} = \mathbb{E}_{s,a\sim\pi}[\sum_{t=0}^{\infty}\nabla_{\theta}\log\pi(a_{i}|
       </tags>
   </entry>
   <entry>
+    <title>python装饰器</title>
+    <url>/2020/05/08/decorator/</url>
+    <content><![CDATA[<h1 id="什么是装饰器"><a href="#什么是装饰器" class="headerlink" title="什么是装饰器"></a>什么是装饰器</h1><p>简单地认为，就是为Python函数添加额外的功能</p>
+<h1 id="装饰器栗子"><a href="#装饰器栗子" class="headerlink" title="装饰器栗子"></a>装饰器栗子</h1><p>未完待续<br><a id="more"></a></p>
+<h1 id="几个装饰器神器"><a href="#几个装饰器神器" class="headerlink" title="几个装饰器神器"></a>几个装饰器神器</h1><h2 id="调试神器PySnooper"><a href="#调试神器PySnooper" class="headerlink" title="调试神器PySnooper"></a>调试神器PySnooper</h2><blockquote>
+<p>作用：开发者可以在任何庞大的代码库中使用它，而无需进行任何设置。你只需添加装饰器，并为日志输出地址指定路径，方法是将其路径指定为第一个参数。</p>
+</blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install pysnooper</span><br></pre></td></tr></table></figure>
+<h3 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h3><p>只需要在每个函数前面添加装饰器即可</p>
+<h3 id="栗子"><a href="#栗子" class="headerlink" title="栗子"></a>栗子</h3><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pysnooper</span><br><span class="line"></span><br><span class="line"><span class="meta">@pysnooper.snoop()</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">number_to_bits</span><span class="params">(number)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> number:</span><br><span class="line">        bits = []</span><br><span class="line">        <span class="keyword">while</span> number:</span><br><span class="line">            number, remainder = divmod(number, <span class="number">2</span>)</span><br><span class="line">            bits.insert(<span class="number">0</span>, remainder)</span><br><span class="line">        <span class="keyword">return</span> bits</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> [<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">number_to_bits(<span class="number">6</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>注意@pysnooper.snoop() 一定得放在需要调试的函数前面，放类前面是没有用的~</p>
+<h2 id="查看执行时间神器line-profiler"><a href="#查看执行时间神器line-profiler" class="headerlink" title="查看执行时间神器line_profiler"></a>查看执行时间神器line_profiler</h2><blockquote>
+<p>作用:line_profiler可以统计每行代码的执行次数和执行时间等，时间单位为微妙，便于调优，找出瓶颈代码</p>
+</blockquote>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install line_profiler</span><br></pre></td></tr></table></figure>
+<h3 id="栗子-1"><a href="#栗子-1" class="headerlink" title="栗子"></a>栗子</h3><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="meta">@profile</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    a = <span class="number">0</span></span><br><span class="line">    b = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">100000</span>):</span><br><span class="line">        a = a + i * i</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>):</span><br><span class="line">        b += <span class="number">1</span></span><br><span class="line">        time.sleep(<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line"></span><br><span class="line">fun()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Manual</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>tags</title>
     <url>/tags/index.html</url>
     <content><![CDATA[]]></content>

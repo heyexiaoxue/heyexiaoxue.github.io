@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"github.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="什么是装饰器简单地认为，就是为Python函数添加额外的功能 装饰器栗子未完待续">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/04/17/hello-world/index.html">
+<meta property="og:title" content="python装饰器">
+<meta property="og:url" content="https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/05/08/decorator/index.html">
 <meta property="og:site_name" content="Sherry Yu">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta property="article:published_time" content="2020-04-17T14:40:33.000Z">
-<meta property="article:modified_time" content="2020-04-17T17:33:36.116Z">
+<meta property="og:description" content="什么是装饰器简单地认为，就是为Python函数添加额外的功能 装饰器栗子未完待续">
+<meta property="article:published_time" content="2020-05-08T14:29:19.000Z">
+<meta property="article:modified_time" content="2020-05-08T15:00:20.130Z">
 <meta property="article:author" content="Sherry Yu">
 <meta property="article:tag" content="Manual">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/04/17/hello-world/">
+<link rel="canonical" href="https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/05/08/decorator/">
 
 
 <script id="page-configurations">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>Hello World | Sherry Yu</title>
+  <title>python装饰器 | Sherry Yu</title>
   
 
 
@@ -176,7 +176,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="default">
-    <link itemprop="mainEntityOfPage" href="https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/04/17/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/05/08/decorator/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/Kaori.jpeg">
@@ -189,7 +189,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          python装饰器
         </h1>
 
         <div class="post-meta">
@@ -198,16 +198,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-04-17 22:40:33" itemprop="dateCreated datePublished" datetime="2020-04-17T22:40:33+08:00">2020-04-17</time>
+              <time title="Created: 2020-05-08 22:29:19 / Modified: 23:00:20" itemprop="dateCreated datePublished" datetime="2020-05-08T22:29:19+08:00">2020-05-08</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-18 01:33:36" itemprop="dateModified" datetime="2020-04-18T01:33:36+08:00">2020-04-18</time>
-              </span>
 
           
 
@@ -220,16 +214,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="什么是装饰器"><a href="#什么是装饰器" class="headerlink" title="什么是装饰器"></a>什么是装饰器</h1><p>简单地认为，就是为Python函数添加额外的功能</p>
+<h1 id="装饰器栗子"><a href="#装饰器栗子" class="headerlink" title="装饰器栗子"></a>装饰器栗子</h1><p>未完待续<br><a id="more"></a></p>
+<h1 id="几个装饰器神器"><a href="#几个装饰器神器" class="headerlink" title="几个装饰器神器"></a>几个装饰器神器</h1><h2 id="调试神器PySnooper"><a href="#调试神器PySnooper" class="headerlink" title="调试神器PySnooper"></a>调试神器PySnooper</h2><blockquote>
+<p>作用：开发者可以在任何庞大的代码库中使用它，而无需进行任何设置。你只需添加装饰器，并为日志输出地址指定路径，方法是将其路径指定为第一个参数。</p>
+</blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pysnooper</span><br></pre></td></tr></table></figure>
+<h3 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h3><p>只需要在每个函数前面添加装饰器即可</p>
+<h3 id="栗子"><a href="#栗子" class="headerlink" title="栗子"></a>栗子</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pysnooper</span><br><span class="line"></span><br><span class="line"><span class="meta">@pysnooper.snoop()</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">number_to_bits</span><span class="params">(number)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> number:</span><br><span class="line">        bits = []</span><br><span class="line">        <span class="keyword">while</span> number:</span><br><span class="line">            number, remainder = divmod(number, <span class="number">2</span>)</span><br><span class="line">            bits.insert(<span class="number">0</span>, remainder)</span><br><span class="line">        <span class="keyword">return</span> bits</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> [<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">number_to_bits(<span class="number">6</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>注意@pysnooper.snoop() 一定得放在需要调试的函数前面，放类前面是没有用的~</p>
+<h2 id="查看执行时间神器line-profiler"><a href="#查看执行时间神器line-profiler" class="headerlink" title="查看执行时间神器line_profiler"></a>查看执行时间神器line_profiler</h2><blockquote>
+<p>作用:line_profiler可以统计每行代码的执行次数和执行时间等，时间单位为微妙，便于调优，找出瓶颈代码</p>
+</blockquote>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install line_profiler</span><br></pre></td></tr></table></figure>
+<h3 id="栗子-1"><a href="#栗子-1" class="headerlink" title="栗子"></a>栗子</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="meta">@profile</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    a = <span class="number">0</span></span><br><span class="line">    b = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">100000</span>):</span><br><span class="line">        a = a + i * i</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>):</span><br><span class="line">        b += <span class="number">1</span></span><br><span class="line">        time.sleep(<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line"></span><br><span class="line">fun()</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -245,7 +243,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/04/17/hello-world/" title="Hello World">https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/04/17/hello-world/</a>
+    <a href="https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/05/08/decorator/" title="python装饰器">https://github.com/heyexiaoxue/heyexiaoxue.github.io/2020/05/08/decorator/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -264,11 +262,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/04/17/fist-post/" rel="next" title="MarkDown入门参考">
-      MarkDown入门参考 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/04/18/pyecharts-learning/" rel="prev" title="pyecharts学习笔记">
+      <i class="fa fa-chevron-left"></i> pyecharts学习笔记
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -328,7 +326,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是装饰器"><span class="nav-number">1.</span> <span class="nav-text">什么是装饰器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#装饰器栗子"><span class="nav-number">2.</span> <span class="nav-text">装饰器栗子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几个装饰器神器"><span class="nav-number">3.</span> <span class="nav-text">几个装饰器神器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#调试神器PySnooper"><span class="nav-number">3.1.</span> <span class="nav-text">调试神器PySnooper</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方式"><span class="nav-number">3.1.2.</span> <span class="nav-text">使用方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#栗子"><span class="nav-number">3.1.3.</span> <span class="nav-text">栗子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">3.1.4.</span> <span class="nav-text">注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看执行时间神器line-profiler"><span class="nav-number">3.2.</span> <span class="nav-text">查看执行时间神器line_profiler</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-1"><span class="nav-number">3.2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#栗子-1"><span class="nav-number">3.2.2.</span> <span class="nav-text">栗子</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -467,6 +465,53 @@ if (document.querySelectorAll('div.pdf').length) {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
